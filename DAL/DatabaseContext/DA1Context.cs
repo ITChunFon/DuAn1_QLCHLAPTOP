@@ -13,6 +13,7 @@ namespace DAL.DatabaseContext
         DbSet<NhanVien> nhanViens { get; set; }
         DbSet<HoaDon> hoaDons { get; set; }
         DbSet<KhachHang> khachHangs { get; set; }
+        DbSet<HoaDonChiTiet> hoaDonChiTiets { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -32,6 +33,11 @@ namespace DAL.DatabaseContext
 
             #region HoaDon 
             modelBuilder.Entity<HoaDon>().HasKey(hd => hd.MaHD);
+            // tạo quan hệ với bảng hoá đơn chi tiết 1 - n
+            modelBuilder.Entity<HoaDon>()
+                .HasMany<HoaDonChiTiet>(hd => hd.hoadonchitiets)
+                .WithOne(hdct => hdct.hoaDon)
+                .HasForeignKey(hdct => hdct.MaHD);
             #endregion
 
             #region KhachHang
@@ -43,7 +49,9 @@ namespace DAL.DatabaseContext
                 .HasForeignKey(hd => hd.MaKH);
             #endregion
 
-
+            #region HoaDonChiTiet
+            modelBuilder.Entity<HoaDonChiTiet>().HasKey(hdct => hdct.MaHD);
+            #endregion
 
 
 

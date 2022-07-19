@@ -4,6 +4,7 @@ using DAL.DatabaseContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(DA1Context))]
-    partial class DA1ContextModelSnapshot : ModelSnapshot
+    [Migration("20220719041308_Db7")]
+    partial class Db7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -80,11 +82,12 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("DAL.Model.HoaDonChiTiet", b =>
                 {
-                    b.Property<string>("MaHD")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<float>("DonGia")
                         .HasColumnType("real");
+
+                    b.Property<string>("MaHD")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SoLuong")
                         .HasColumnType("int");
@@ -92,8 +95,6 @@ namespace DAL.Migrations
                     b.Property<string>("TenSP")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("MaHD");
 
                     b.ToTable("hoaDonChiTiets");
                 });
@@ -195,17 +196,6 @@ namespace DAL.Migrations
                     b.Navigation("khachHang");
                 });
 
-            modelBuilder.Entity("DAL.Model.HoaDonChiTiet", b =>
-                {
-                    b.HasOne("DAL.Model.HoaDon", "hoaDon")
-                        .WithMany("hoadonchitiets")
-                        .HasForeignKey("MaHD")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("hoaDon");
-                });
-
             modelBuilder.Entity("DAL.Model.NhanVien", b =>
                 {
                     b.HasOne("DAL.Model.NhanVien", "QuanLi")
@@ -213,11 +203,6 @@ namespace DAL.Migrations
                         .HasForeignKey("MaQuanLi");
 
                     b.Navigation("QuanLi");
-                });
-
-            modelBuilder.Entity("DAL.Model.HoaDon", b =>
-                {
-                    b.Navigation("hoadonchitiets");
                 });
 
             modelBuilder.Entity("DAL.Model.KhachHang", b =>
