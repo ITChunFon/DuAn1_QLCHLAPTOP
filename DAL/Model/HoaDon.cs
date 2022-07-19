@@ -22,7 +22,8 @@ namespace DAL.Model
 
         public string MaNV { get; set; }
         public NhanVien NhanVien { get; set; }
+
         public string MaKH { get; set; }
-        
+        public KhachHang khachHang { get; set; }
     }
 }
