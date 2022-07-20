@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentation
 {
-    public partial class Formtrash : Form
+    public partial class FormKhachHang : Form
     {
-        public Formtrash()
+        public FormKhachHang()
         {
             InitializeComponent();
         }
