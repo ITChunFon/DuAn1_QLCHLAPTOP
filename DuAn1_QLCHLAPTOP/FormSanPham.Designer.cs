@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox_thongtin = new System.Windows.Forms.GroupBox();
+            this.tb_timkiem = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBox_mau = new System.Windows.Forms.ComboBox();
+            this.lb_mau = new System.Windows.Forms.Label();
+            this.lb_dongsanpham = new System.Windows.Forms.Label();
+            this.comboBox_dongspTTSP = new System.Windows.Forms.ComboBox();
             this.groupBox_thietlap = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tb_ghichu = new System.Windows.Forms.TextBox();
@@ -49,17 +56,101 @@
             this.lb_masp = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.groupBox_thongtin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox_thietlap.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.groupBox_thongtin);
             this.panel1.Controls.Add(this.groupBox_thietlap);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(11, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1410, 879);
             this.panel1.TabIndex = 1;
+            // 
+            // groupBox_thongtin
+            // 
+            this.groupBox_thongtin.Controls.Add(this.tb_timkiem);
+            this.groupBox_thongtin.Controls.Add(this.dataGridView1);
+            this.groupBox_thongtin.Controls.Add(this.comboBox_mau);
+            this.groupBox_thongtin.Controls.Add(this.lb_mau);
+            this.groupBox_thongtin.Controls.Add(this.lb_dongsanpham);
+            this.groupBox_thongtin.Controls.Add(this.comboBox_dongspTTSP);
+            this.groupBox_thongtin.Location = new System.Drawing.Point(3, 487);
+            this.groupBox_thongtin.Name = "groupBox_thongtin";
+            this.groupBox_thongtin.Size = new System.Drawing.Size(1331, 381);
+            this.groupBox_thongtin.TabIndex = 2;
+            this.groupBox_thongtin.TabStop = false;
+            this.groupBox_thongtin.Text = "Thông Tin Sản Phẩm";
+            // 
+            // tb_timkiem
+            // 
+            this.tb_timkiem.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_timkiem.Location = new System.Drawing.Point(1008, 55);
+            this.tb_timkiem.Multiline = true;
+            this.tb_timkiem.Name = "tb_timkiem";
+            this.tb_timkiem.PlaceholderText = "Tìm Kiếm Theo Tên Sản Phẩm";
+            this.tb_timkiem.Size = new System.Drawing.Size(273, 31);
+            this.tb_timkiem.TabIndex = 24;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.GhostWhite;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 103);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 29;
+            this.dataGridView1.Size = new System.Drawing.Size(1275, 259);
+            this.dataGridView1.TabIndex = 27;
+            // 
+            // comboBox_mau
+            // 
+            this.comboBox_mau.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox_mau.FormattingEnabled = true;
+            this.comboBox_mau.Location = new System.Drawing.Point(583, 55);
+            this.comboBox_mau.Name = "comboBox_mau";
+            this.comboBox_mau.Size = new System.Drawing.Size(193, 31);
+            this.comboBox_mau.TabIndex = 26;
+            // 
+            // lb_mau
+            // 
+            this.lb_mau.AutoSize = true;
+            this.lb_mau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lb_mau.Location = new System.Drawing.Point(523, 53);
+            this.lb_mau.Name = "lb_mau";
+            this.lb_mau.Size = new System.Drawing.Size(54, 28);
+            this.lb_mau.TabIndex = 24;
+            this.lb_mau.Text = "Màu";
+            // 
+            // lb_dongsanpham
+            // 
+            this.lb_dongsanpham.AutoSize = true;
+            this.lb_dongsanpham.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lb_dongsanpham.Location = new System.Drawing.Point(30, 53);
+            this.lb_dongsanpham.Name = "lb_dongsanpham";
+            this.lb_dongsanpham.Size = new System.Drawing.Size(162, 28);
+            this.lb_dongsanpham.TabIndex = 25;
+            this.lb_dongsanpham.Text = "Dòng Sản Phẩm";
+            // 
+            // comboBox_dongspTTSP
+            // 
+            this.comboBox_dongspTTSP.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox_dongspTTSP.FormattingEnabled = true;
+            this.comboBox_dongspTTSP.Items.AddRange(new object[] {
+            "PC",
+            "Laptop",
+            "Bàn Phím",
+            "Chuột",
+            "Tai Nghe",
+            "Màn Hình"});
+            this.comboBox_dongspTTSP.Location = new System.Drawing.Point(198, 55);
+            this.comboBox_dongspTTSP.Name = "comboBox_dongspTTSP";
+            this.comboBox_dongspTTSP.Size = new System.Drawing.Size(193, 31);
+            this.comboBox_dongspTTSP.TabIndex = 24;
             // 
             // groupBox_thietlap
             // 
@@ -91,7 +182,7 @@
             // 
             this.panel2.Location = new System.Drawing.Point(493, 26);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(682, 389);
+            this.panel2.Size = new System.Drawing.Size(788, 389);
             this.panel2.TabIndex = 30;
             // 
             // tb_ghichu
@@ -195,6 +286,7 @@
             this.tb_giaban.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tb_giaban.Location = new System.Drawing.Point(224, 206);
             this.tb_giaban.Name = "tb_giaban";
+            this.tb_giaban.PlaceholderText = "                                           VND";
             this.tb_giaban.Size = new System.Drawing.Size(263, 30);
             this.tb_giaban.TabIndex = 13;
             // 
@@ -203,6 +295,7 @@
             this.tb_gianhap.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tb_gianhap.Location = new System.Drawing.Point(224, 161);
             this.tb_gianhap.Name = "tb_gianhap";
+            this.tb_gianhap.PlaceholderText = "                                           VND";
             this.tb_gianhap.Size = new System.Drawing.Size(263, 30);
             this.tb_gianhap.TabIndex = 12;
             // 
@@ -274,6 +367,9 @@
             this.Text = "FormSanPham";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox_thongtin.ResumeLayout(false);
+            this.groupBox_thongtin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox_thietlap.ResumeLayout(false);
             this.groupBox_thietlap.PerformLayout();
             this.ResumeLayout(false);
@@ -302,5 +398,12 @@
         private Label lb_tensp;
         private Label lb_masp;
         private Label label1;
+        private GroupBox groupBox_thongtin;
+        private TextBox tb_timkiem;
+        private DataGridView dataGridView1;
+        private ComboBox comboBox_mau;
+        private Label lb_dongsanpham;
+        private ComboBox comboBox_dongspTTSP;
+        private Label lb_mau;
     }
 }

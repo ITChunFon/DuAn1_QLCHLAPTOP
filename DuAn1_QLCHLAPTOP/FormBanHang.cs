@@ -40,6 +40,17 @@ namespace Presentation
             bt_dangxuat.TabStop = false;
             bt_dangxuat.FlatStyle = FlatStyle.Flat;
             bt_dangxuat.FlatAppearance.BorderSize = 0;
+            //Mở form Bán Hàng 1
+            panel3.Controls.Clear();
+            FormBanHang1 fbh = new FormBanHang1()
+            {
+                Dock = DockStyle.Fill,
+                TopLevel = false,
+                TopMost = true,
+            };
+            this.panel3.Controls.Add(fbh);
+            fbh.FormBorderStyle = FormBorderStyle.None;
+            fbh.Show();
         }           
         private void bt_nhanvien_Click_1(object sender, EventArgs e)
         {           
