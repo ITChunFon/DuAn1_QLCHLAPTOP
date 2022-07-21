@@ -33,8 +33,8 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.rdb_thang = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.rdb_tatca = new System.Windows.Forms.RadioButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,17 +108,6 @@
             this.rdb_thang.Text = "Tháng";
             this.rdb_thang.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.GhostWhite;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 200);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1260, 484);
-            this.dataGridView1.TabIndex = 43;
-            // 
             // rdb_tatca
             // 
             this.rdb_tatca.AutoSize = true;
@@ -130,6 +119,17 @@
             this.rdb_tatca.TabStop = true;
             this.rdb_tatca.Text = "Tất Cả";
             this.rdb_tatca.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.GhostWhite;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(31, 200);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 29;
+            this.dataGridView1.Size = new System.Drawing.Size(1260, 484);
+            this.dataGridView1.TabIndex = 43;
             // 
             // FormThongKeDoanhThu
             // 
@@ -159,7 +159,7 @@
         private ComboBox comboBox2;
         private ComboBox comboBox1;
         private RadioButton rdb_thang;
-        private DataGridView dataGridView1;
         private RadioButton rdb_tatca;
+        private DataGridView dataGridView1;
     }
 }

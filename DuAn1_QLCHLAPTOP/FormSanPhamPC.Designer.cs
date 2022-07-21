@@ -94,7 +94,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_cooling.Location = new System.Drawing.Point(436, 235);
+            this.comboBox_cooling.Location = new System.Drawing.Point(436, 253);
             this.comboBox_cooling.Name = "comboBox_cooling";
             this.comboBox_cooling.Size = new System.Drawing.Size(213, 31);
             this.comboBox_cooling.TabIndex = 51;
@@ -110,7 +110,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_case.Location = new System.Drawing.Point(436, 172);
+            this.comboBox_case.Location = new System.Drawing.Point(436, 190);
             this.comboBox_case.Name = "comboBox_case";
             this.comboBox_case.Size = new System.Drawing.Size(213, 31);
             this.comboBox_case.TabIndex = 50;
@@ -126,7 +126,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_psu.Location = new System.Drawing.Point(436, 101);
+            this.comboBox_psu.Location = new System.Drawing.Point(436, 119);
             this.comboBox_psu.Name = "comboBox_psu";
             this.comboBox_psu.Size = new System.Drawing.Size(213, 31);
             this.comboBox_psu.TabIndex = 49;
@@ -142,7 +142,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_ssd.Location = new System.Drawing.Point(436, 23);
+            this.comboBox_ssd.Location = new System.Drawing.Point(436, 41);
             this.comboBox_ssd.Name = "comboBox_ssd";
             this.comboBox_ssd.Size = new System.Drawing.Size(213, 31);
             this.comboBox_ssd.TabIndex = 48;
@@ -158,7 +158,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_hhd.Location = new System.Drawing.Point(83, 235);
+            this.comboBox_hhd.Location = new System.Drawing.Point(83, 253);
             this.comboBox_hhd.Name = "comboBox_hhd";
             this.comboBox_hhd.Size = new System.Drawing.Size(213, 31);
             this.comboBox_hhd.TabIndex = 47;
@@ -174,7 +174,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_vga.Location = new System.Drawing.Point(178, 172);
+            this.comboBox_vga.Location = new System.Drawing.Point(178, 190);
             this.comboBox_vga.Name = "comboBox_vga";
             this.comboBox_vga.Size = new System.Drawing.Size(118, 31);
             this.comboBox_vga.TabIndex = 46;
@@ -190,7 +190,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_ram.Location = new System.Drawing.Point(83, 101);
+            this.comboBox_ram.Location = new System.Drawing.Point(83, 119);
             this.comboBox_ram.Name = "comboBox_ram";
             this.comboBox_ram.Size = new System.Drawing.Size(213, 31);
             this.comboBox_ram.TabIndex = 45;
@@ -206,7 +206,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_cpu.Location = new System.Drawing.Point(83, 23);
+            this.comboBox_cpu.Location = new System.Drawing.Point(83, 41);
             this.comboBox_cpu.Name = "comboBox_cpu";
             this.comboBox_cpu.Size = new System.Drawing.Size(213, 31);
             this.comboBox_cpu.TabIndex = 44;
@@ -215,7 +215,7 @@
             // 
             this.lb_ssd.AutoSize = true;
             this.lb_ssd.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_ssd.Location = new System.Drawing.Point(352, 31);
+            this.lb_ssd.Location = new System.Drawing.Point(352, 49);
             this.lb_ssd.Name = "lb_ssd";
             this.lb_ssd.Size = new System.Drawing.Size(40, 23);
             this.lb_ssd.TabIndex = 35;
@@ -225,7 +225,7 @@
             // 
             this.lb_hhd.AutoSize = true;
             this.lb_hhd.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_hhd.Location = new System.Drawing.Point(21, 243);
+            this.lb_hhd.Location = new System.Drawing.Point(21, 261);
             this.lb_hhd.Name = "lb_hhd";
             this.lb_hhd.Size = new System.Drawing.Size(48, 23);
             this.lb_hhd.TabIndex = 34;
@@ -235,7 +235,7 @@
             // 
             this.lb_cooling.AutoSize = true;
             this.lb_cooling.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_cooling.Location = new System.Drawing.Point(352, 243);
+            this.lb_cooling.Location = new System.Drawing.Point(352, 261);
             this.lb_cooling.Name = "lb_cooling";
             this.lb_cooling.Size = new System.Drawing.Size(69, 23);
             this.lb_cooling.TabIndex = 33;
@@ -245,7 +245,7 @@
             // 
             this.lb_case.AutoSize = true;
             this.lb_case.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_case.Location = new System.Drawing.Point(352, 180);
+            this.lb_case.Location = new System.Drawing.Point(352, 198);
             this.lb_case.Name = "lb_case";
             this.lb_case.Size = new System.Drawing.Size(46, 23);
             this.lb_case.TabIndex = 32;
@@ -255,7 +255,7 @@
             // 
             this.lb_vga.AutoSize = true;
             this.lb_vga.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_vga.Location = new System.Drawing.Point(21, 180);
+            this.lb_vga.Location = new System.Drawing.Point(21, 198);
             this.lb_vga.Name = "lb_vga";
             this.lb_vga.Size = new System.Drawing.Size(151, 23);
             this.lb_vga.TabIndex = 31;
@@ -265,7 +265,7 @@
             // 
             this.lb_ram.AutoSize = true;
             this.lb_ram.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_ram.Location = new System.Drawing.Point(21, 109);
+            this.lb_ram.Location = new System.Drawing.Point(21, 127);
             this.lb_ram.Name = "lb_ram";
             this.lb_ram.Size = new System.Drawing.Size(48, 23);
             this.lb_ram.TabIndex = 30;
@@ -275,7 +275,7 @@
             // 
             this.lb_cpu.AutoSize = true;
             this.lb_cpu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_cpu.Location = new System.Drawing.Point(21, 31);
+            this.lb_cpu.Location = new System.Drawing.Point(21, 49);
             this.lb_cpu.Name = "lb_cpu";
             this.lb_cpu.Size = new System.Drawing.Size(43, 23);
             this.lb_cpu.TabIndex = 29;
@@ -285,7 +285,7 @@
             // 
             this.lb_psu.AutoSize = true;
             this.lb_psu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_psu.Location = new System.Drawing.Point(352, 109);
+            this.lb_psu.Location = new System.Drawing.Point(352, 127);
             this.lb_psu.Name = "lb_psu";
             this.lb_psu.Size = new System.Drawing.Size(41, 23);
             this.lb_psu.TabIndex = 28;

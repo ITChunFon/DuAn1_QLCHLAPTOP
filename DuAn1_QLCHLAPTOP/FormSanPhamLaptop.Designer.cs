@@ -106,7 +106,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_kichthuoc.Location = new System.Drawing.Point(419, 289);
+            this.comboBox_kichthuoc.Location = new System.Drawing.Point(419, 266);
             this.comboBox_kichthuoc.Name = "comboBox_kichthuoc";
             this.comboBox_kichthuoc.Size = new System.Drawing.Size(213, 31);
             this.comboBox_kichthuoc.TabIndex = 57;
@@ -122,7 +122,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_trongluong.Location = new System.Drawing.Point(135, 339);
+            this.comboBox_trongluong.Location = new System.Drawing.Point(135, 316);
             this.comboBox_trongluong.Name = "comboBox_trongluong";
             this.comboBox_trongluong.Size = new System.Drawing.Size(161, 31);
             this.comboBox_trongluong.TabIndex = 56;
@@ -138,7 +138,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_pin.Location = new System.Drawing.Point(83, 289);
+            this.comboBox_pin.Location = new System.Drawing.Point(83, 266);
             this.comboBox_pin.Name = "comboBox_pin";
             this.comboBox_pin.Size = new System.Drawing.Size(213, 31);
             this.comboBox_pin.TabIndex = 55;
@@ -147,7 +147,7 @@
             // 
             this.lb_kichthuoc.AutoSize = true;
             this.lb_kichthuoc.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_kichthuoc.Location = new System.Drawing.Point(318, 297);
+            this.lb_kichthuoc.Location = new System.Drawing.Point(318, 274);
             this.lb_kichthuoc.Name = "lb_kichthuoc";
             this.lb_kichthuoc.Size = new System.Drawing.Size(95, 23);
             this.lb_kichthuoc.TabIndex = 54;
@@ -157,7 +157,7 @@
             // 
             this.lb_trongluong.AutoSize = true;
             this.lb_trongluong.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_trongluong.Location = new System.Drawing.Point(21, 342);
+            this.lb_trongluong.Location = new System.Drawing.Point(21, 319);
             this.lb_trongluong.Name = "lb_trongluong";
             this.lb_trongluong.Size = new System.Drawing.Size(108, 23);
             this.lb_trongluong.TabIndex = 53;
@@ -167,7 +167,7 @@
             // 
             this.lb_pin.AutoSize = true;
             this.lb_pin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_pin.Location = new System.Drawing.Point(21, 297);
+            this.lb_pin.Location = new System.Drawing.Point(21, 274);
             this.lb_pin.Name = "lb_pin";
             this.lb_pin.Size = new System.Drawing.Size(34, 23);
             this.lb_pin.TabIndex = 52;
@@ -184,7 +184,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_hedieuhanh.Location = new System.Drawing.Point(443, 235);
+            this.comboBox_hedieuhanh.Location = new System.Drawing.Point(443, 212);
             this.comboBox_hedieuhanh.Name = "comboBox_hedieuhanh";
             this.comboBox_hedieuhanh.Size = new System.Drawing.Size(189, 31);
             this.comboBox_hedieuhanh.TabIndex = 51;
@@ -200,7 +200,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_webcam.Location = new System.Drawing.Point(411, 172);
+            this.comboBox_webcam.Location = new System.Drawing.Point(411, 149);
             this.comboBox_webcam.Name = "comboBox_webcam";
             this.comboBox_webcam.Size = new System.Drawing.Size(213, 31);
             this.comboBox_webcam.TabIndex = 50;
@@ -216,7 +216,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_banphim.Location = new System.Drawing.Point(411, 101);
+            this.comboBox_banphim.Location = new System.Drawing.Point(411, 78);
             this.comboBox_banphim.Name = "comboBox_banphim";
             this.comboBox_banphim.Size = new System.Drawing.Size(213, 31);
             this.comboBox_banphim.TabIndex = 49;
@@ -232,7 +232,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_manhinh.Location = new System.Drawing.Point(411, 23);
+            this.comboBox_manhinh.Location = new System.Drawing.Point(411, 0);
             this.comboBox_manhinh.Name = "comboBox_manhinh";
             this.comboBox_manhinh.Size = new System.Drawing.Size(213, 31);
             this.comboBox_manhinh.TabIndex = 48;
@@ -248,7 +248,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_oluutru.Location = new System.Drawing.Point(114, 235);
+            this.comboBox_oluutru.Location = new System.Drawing.Point(114, 212);
             this.comboBox_oluutru.Name = "comboBox_oluutru";
             this.comboBox_oluutru.Size = new System.Drawing.Size(182, 31);
             this.comboBox_oluutru.TabIndex = 47;
@@ -264,7 +264,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_vga.Location = new System.Drawing.Point(178, 172);
+            this.comboBox_vga.Location = new System.Drawing.Point(178, 149);
             this.comboBox_vga.Name = "comboBox_vga";
             this.comboBox_vga.Size = new System.Drawing.Size(118, 31);
             this.comboBox_vga.TabIndex = 46;
@@ -280,7 +280,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_ram.Location = new System.Drawing.Point(83, 101);
+            this.comboBox_ram.Location = new System.Drawing.Point(83, 78);
             this.comboBox_ram.Name = "comboBox_ram";
             this.comboBox_ram.Size = new System.Drawing.Size(213, 31);
             this.comboBox_ram.TabIndex = 45;
@@ -296,7 +296,7 @@
             "Chuột",
             "Tai Nghe",
             "Màn Hình"});
-            this.comboBox_cpu.Location = new System.Drawing.Point(83, 23);
+            this.comboBox_cpu.Location = new System.Drawing.Point(83, 0);
             this.comboBox_cpu.Name = "comboBox_cpu";
             this.comboBox_cpu.Size = new System.Drawing.Size(213, 31);
             this.comboBox_cpu.TabIndex = 44;
@@ -305,7 +305,7 @@
             // 
             this.lb_manhinh.AutoSize = true;
             this.lb_manhinh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_manhinh.Location = new System.Drawing.Point(318, 26);
+            this.lb_manhinh.Location = new System.Drawing.Point(318, 3);
             this.lb_manhinh.Name = "lb_manhinh";
             this.lb_manhinh.Size = new System.Drawing.Size(87, 23);
             this.lb_manhinh.TabIndex = 35;
@@ -315,7 +315,7 @@
             // 
             this.lb_oluutru.AutoSize = true;
             this.lb_oluutru.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_oluutru.Location = new System.Drawing.Point(21, 243);
+            this.lb_oluutru.Location = new System.Drawing.Point(21, 220);
             this.lb_oluutru.Name = "lb_oluutru";
             this.lb_oluutru.Size = new System.Drawing.Size(87, 23);
             this.lb_oluutru.TabIndex = 34;
@@ -325,7 +325,7 @@
             // 
             this.lb_hedieuhanh.AutoSize = true;
             this.lb_hedieuhanh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_hedieuhanh.Location = new System.Drawing.Point(318, 243);
+            this.lb_hedieuhanh.Location = new System.Drawing.Point(318, 220);
             this.lb_hedieuhanh.Name = "lb_hedieuhanh";
             this.lb_hedieuhanh.Size = new System.Drawing.Size(119, 23);
             this.lb_hedieuhanh.TabIndex = 33;
@@ -335,7 +335,7 @@
             // 
             this.lb_webcam.AutoSize = true;
             this.lb_webcam.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_webcam.Location = new System.Drawing.Point(316, 180);
+            this.lb_webcam.Location = new System.Drawing.Point(316, 157);
             this.lb_webcam.Name = "lb_webcam";
             this.lb_webcam.Size = new System.Drawing.Size(77, 23);
             this.lb_webcam.TabIndex = 32;
@@ -345,7 +345,7 @@
             // 
             this.lb_vga.AutoSize = true;
             this.lb_vga.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_vga.Location = new System.Drawing.Point(21, 180);
+            this.lb_vga.Location = new System.Drawing.Point(21, 157);
             this.lb_vga.Name = "lb_vga";
             this.lb_vga.Size = new System.Drawing.Size(151, 23);
             this.lb_vga.TabIndex = 31;
@@ -355,7 +355,7 @@
             // 
             this.lb_ram.AutoSize = true;
             this.lb_ram.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_ram.Location = new System.Drawing.Point(21, 109);
+            this.lb_ram.Location = new System.Drawing.Point(21, 86);
             this.lb_ram.Name = "lb_ram";
             this.lb_ram.Size = new System.Drawing.Size(48, 23);
             this.lb_ram.TabIndex = 30;
@@ -365,7 +365,7 @@
             // 
             this.lb_cpu.AutoSize = true;
             this.lb_cpu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_cpu.Location = new System.Drawing.Point(21, 31);
+            this.lb_cpu.Location = new System.Drawing.Point(21, 8);
             this.lb_cpu.Name = "lb_cpu";
             this.lb_cpu.Size = new System.Drawing.Size(43, 23);
             this.lb_cpu.TabIndex = 29;
@@ -375,7 +375,7 @@
             // 
             this.lb_banphim.AutoSize = true;
             this.lb_banphim.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_banphim.Location = new System.Drawing.Point(316, 109);
+            this.lb_banphim.Location = new System.Drawing.Point(316, 86);
             this.lb_banphim.Name = "lb_banphim";
             this.lb_banphim.Size = new System.Drawing.Size(83, 23);
             this.lb_banphim.TabIndex = 28;
