@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentation
 {
-    public partial class FormVuiVui : Form
+    public partial class Formtrash : Form
     {
-        public FormVuiVui()
+        public Formtrash()
         {
             InitializeComponent();
         }
