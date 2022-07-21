@@ -19,14 +19,13 @@ namespace Presentation
       
         private void sảnPhẩmToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
+
             FormThongKeSanPham ftksp = new FormThongKeSanPham()
             {
                 Dock = DockStyle.Fill,
                 TopLevel = false,
                 TopMost = true,
             };
-            this.panel1.Controls.Add(ftksp);
             ftksp.FormBorderStyle = FormBorderStyle.None;
             ftksp.Show();
         }

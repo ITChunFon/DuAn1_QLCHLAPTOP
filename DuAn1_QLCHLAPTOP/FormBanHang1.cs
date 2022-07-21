@@ -16,5 +16,10 @@ namespace Presentation
         {
             InitializeComponent();
         }
+
+        private void FormBanHang1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

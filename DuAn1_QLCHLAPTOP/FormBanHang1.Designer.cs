@@ -60,6 +60,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormBanHang1";
             this.Text = "FormBanHang1";
+            this.Load += new System.EventHandler(this.FormBanHang1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

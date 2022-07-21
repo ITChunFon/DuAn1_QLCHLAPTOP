@@ -33,6 +33,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doanhThuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.groupBox_thongke.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -48,10 +49,11 @@
             // 
             // groupBox_thongke
             // 
+            this.groupBox_thongke.Controls.Add(this.panel2);
             this.groupBox_thongke.Controls.Add(this.menuStrip1);
             this.groupBox_thongke.Location = new System.Drawing.Point(13, 33);
             this.groupBox_thongke.Name = "groupBox_thongke";
-            this.groupBox_thongke.Size = new System.Drawing.Size(1331, 770);
+            this.groupBox_thongke.Size = new System.Drawing.Size(1331, 843);
             this.groupBox_thongke.TabIndex = 24;
             this.groupBox_thongke.TabStop = false;
             this.groupBox_thongke.Text = "Thống Kê";
@@ -84,6 +86,13 @@
             this.doanhThuToolStripMenuItem.Text = "Doanh Thu";
             this.doanhThuToolStripMenuItem.Click += new System.EventHandler(this.doanhThuToolStripMenuItem_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(6, 69);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1319, 768);
+            this.panel2.TabIndex = 29;
+            // 
             // FormThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -109,5 +118,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem sảnPhẩmToolStripMenuItem;
         private ToolStripMenuItem doanhThuToolStripMenuItem;
+        private Panel panel2;
     }
 }

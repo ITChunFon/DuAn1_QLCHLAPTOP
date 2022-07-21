@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBanHang));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_dangxuat = new System.Windows.Forms.Button();
             this.bt_thongke = new System.Windows.Forms.Button();
             this.bt_khachhang = new System.Windows.Forms.Button();
@@ -41,6 +43,7 @@
             this.pic_avatar = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_avatar)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +51,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Snow;
+            this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.bt_dangxuat);
             this.panel4.Controls.Add(this.bt_thongke);
             this.panel4.Controls.Add(this.bt_khachhang);
@@ -61,6 +65,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(242, 874);
             this.panel4.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(23, 283);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(42, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // bt_dangxuat
             // 
@@ -192,6 +207,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1394, 871);
             this.panel3.TabIndex = 3;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // FormBanHang
             // 
@@ -204,6 +220,7 @@
             this.Name = "FormBanHang";
             this.Text = "FormBanHang";
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic_avatar)).EndInit();
             this.ResumeLayout(false);
@@ -224,5 +241,6 @@
         private Button bt_nhanvien;
         private Button bt_khuyenmai;
         private Button bt_hoadon;
+        private PictureBox pictureBox1;
     }
 }

@@ -19,16 +19,20 @@ namespace Presentation
      
         private void doanhThuToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
             FormThongKeDoanhThu ftkdt = new FormThongKeDoanhThu()
             {
                 Dock = DockStyle.Fill,
                 TopLevel = false,
                 TopMost = true,
             };
-            this.panel1.Controls.Add(ftkdt);
+
             ftkdt.FormBorderStyle = FormBorderStyle.None;
             ftkdt.Show();
+        }
+
+        private void rdb_thang_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

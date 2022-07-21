@@ -19,28 +19,28 @@ namespace Presentation
 
         private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
+            panel2.Controls.Clear();
             FormThongKeDoanhThu ftkdt = new FormThongKeDoanhThu()
             {
                 Dock = DockStyle.Fill,
                 TopLevel = false,
                 TopMost = true,
             };
-            this.panel1.Controls.Add(ftkdt);
+            this.panel2.Controls.Add(ftkdt);
             ftkdt.FormBorderStyle = FormBorderStyle.None;
             ftkdt.Show();
         }
 
         private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
+            panel2.Controls.Clear();
             FormThongKeSanPham ftksp = new FormThongKeSanPham()
             {
                 Dock = DockStyle.Fill,
                 TopLevel = false,
                 TopMost = true,
             };
-            this.panel1.Controls.Add(ftksp);
+            this.panel2.Controls.Add(ftksp);
             ftksp.FormBorderStyle = FormBorderStyle.None;
             ftksp.Show();
         }
