@@ -9,10 +9,12 @@ namespace DAL.Model
     public class HoaDonChiTiet
     {
         public string MaHD { get; set; }
-        public string TenSP { get; set; }
-        public int SoLuong { get; set; }
-        public float DonGia { get; set; }
-
         public HoaDon hoaDon { get; set; }
+
+        public string MaSP { get; set; }
+        public SanPham sanPham { get; set; }
+
+        public int SoLuongMua { get; set; }
+        //public float DonGia { get; set; }
     }
 }
