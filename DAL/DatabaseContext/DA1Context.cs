@@ -20,6 +20,8 @@ namespace DAL.DatabaseContext
         DbSet<BanPhimSoLuongSwitch> banPhimSoLuongSwitches { get; set; }
         DbSet<MauSac> mauSacs { get; set; }
         DbSet<SanPhamMauSac> sanPhamMauSacs { get; set; }
+        DbSet<KeyCaps> keyCaps { get; set; }
+        DbSet<BanPhimKeyCaps> banPhimKeyCaps { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -94,6 +96,11 @@ namespace DAL.DatabaseContext
                 .HasMany<SanPhamMauSac>(bp => bp.sanPhamMauSacs)
                 .WithOne(spms => spms.banPhim)
                 .HasForeignKey(spms => spms.MaSP);
+            // tạo quan hệ 1 - n với bảng BanPhimKeyCaps
+            modelBuilder.Entity<BanPhim>()
+                .HasMany<BanPhimKeyCaps>(bp => bp.banPhimKeyCaps)
+                .WithOne(bpkcs => bpkcs.banPhim)
+                .HasForeignKey(bpkcs => bpkcs.MaSP);
             #endregion
 
             #region banphimsoluongswitch
@@ -109,6 +116,18 @@ namespace DAL.DatabaseContext
                 .HasForeignKey(spms => spms.IdMau);
             #endregion
 
+            #region keycaps
+            modelBuilder.Entity<KeyCaps>().HasKey(kcs => kcs.Id);
+            // tạo quan hệ 1 - n với bảng BanPhimKeyCaps
+            modelBuilder.Entity<KeyCaps>()
+                .HasMany<BanPhimKeyCaps>(kcs => kcs.banPhimKeyCaps)
+                .WithOne(bpkcs => bpkcs.keyCaps)
+                .HasForeignKey(bpkcs => bpkcs.IdKeyCaps);
+            #endregion
+
+            #region banphimkeycaps
+            modelBuilder.Entity<BanPhimKeyCaps>().HasKey(bpkcs => new { bpkcs.IdKeyCaps, bpkcs.MaSP });
+            #endregion
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
