@@ -20,5 +20,7 @@ namespace DAL.Model
         public int MauSac { get; set; }
 
         public SanPham sanPham { get; set; }
+
+        public ICollection<BanPhimSoLuongSwitch> banPhimSoLuongSwitches { get; set; }
     }
 }

@@ -17,6 +17,7 @@ namespace DAL.DatabaseContext
         DbSet<KhuyenMai> khuyenMais { get; set; }
         DbSet<SanPham> sanPhams { get; set; }
         DbSet<BanPhim> banPhims { get; set; }
+        DbSet<BanPhimSoLuongSwitch> banPhimSoLuongSwitches { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -81,7 +82,17 @@ namespace DAL.DatabaseContext
 
             #region BanPhim
             modelBuilder.Entity<BanPhim>().HasKey(bp => bp.MaSP);
+            // tạo quan hệ 1 - n với bảng banphimsoluongswitch
+            modelBuilder.Entity<BanPhim>()
+                .HasMany(bp => bp.banPhimSoLuongSwitches)
+                .WithOne(bpsls => bpsls.banPhim)
+                .HasForeignKey(bpsls => bpsls.MaSP);
             #endregion
+
+            #region banphimsoluongswitch
+            modelBuilder.Entity<BanPhimSoLuongSwitch>().HasKey(bpsls => bpsls.MaSP);
+            #endregion
+
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
