@@ -128,6 +128,10 @@ namespace DAL.DatabaseContext
             #region banphimkeycaps
             modelBuilder.Entity<BanPhimKeyCaps>().HasKey(bpkcs => new { bpkcs.IdKeyCaps, bpkcs.MaSP });
             #endregion
+
+            #region SanphamMauSac
+            modelBuilder.Entity<SanPhamMauSac>().HasKey(spms => new { spms.MaSP, spms.IdMau });
+            #endregion
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
