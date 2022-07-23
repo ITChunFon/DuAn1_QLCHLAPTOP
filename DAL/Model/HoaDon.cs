@@ -29,6 +29,6 @@ namespace DAL.Model
         public string? MaKM { get; set; }
         public KhuyenMai khuyenMai { get; set; }
 
-        public ICollection<HoaDonChiTiet> hoadonchitiets { get; set; }
+        public IList<HoaDonChiTiet> hoadonchitiets { get; set; }
     }
 }
