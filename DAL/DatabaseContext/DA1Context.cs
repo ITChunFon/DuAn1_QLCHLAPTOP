@@ -18,6 +18,8 @@ namespace DAL.DatabaseContext
         DbSet<SanPham> sanPhams { get; set; }
         DbSet<BanPhim> banPhims { get; set; }
         DbSet<BanPhimSoLuongSwitch> banPhimSoLuongSwitches { get; set; }
+        DbSet<MauSac> mauSacs { get; set; }
+        DbSet<SanPhamMauSac> sanPhamMauSacs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -87,10 +89,24 @@ namespace DAL.DatabaseContext
                 .HasMany(bp => bp.banPhimSoLuongSwitches)
                 .WithOne(bpsls => bpsls.banPhim)
                 .HasForeignKey(bpsls => bpsls.MaSP);
+            // tạo quan hệ 1 -n với bảng sanphammausac
+            modelBuilder.Entity<BanPhim>()
+                .HasMany<SanPhamMauSac>(bp => bp.sanPhamMauSacs)
+                .WithOne(spms => spms.banPhim)
+                .HasForeignKey(spms => spms.MaSP);
             #endregion
 
             #region banphimsoluongswitch
             modelBuilder.Entity<BanPhimSoLuongSwitch>().HasKey(bpsls => bpsls.MaSP);
+            #endregion
+
+            #region MauSac
+            modelBuilder.Entity<MauSac>().HasKey(ms => ms.Id);
+            // tạo quan hệ 1 - n với bảng sanphammausac
+            modelBuilder.Entity<MauSac>()
+                .HasMany<SanPhamMauSac>(ms => ms.sanPhamMauSacs)
+                .WithOne(spms => spms.mauSac)
+                .HasForeignKey(spms => spms.IdMau);
             #endregion
 
         }
