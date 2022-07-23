@@ -15,7 +15,7 @@ namespace DAL.Model
         public Int32 DongSP { get; set; }
         public string GhiChu { get; set; }
 
-        public SanPham sanPham { get; set; }
+        public BanPhim banPhim { get; set; }
 
         public IList<HoaDonChiTiet> hoaDonChiTiets { get; set; }
     }

@@ -16,6 +16,7 @@ namespace DAL.DatabaseContext
         DbSet<HoaDonChiTiet> hoaDonChiTiets { get; set; }
         DbSet<KhuyenMai> khuyenMais { get; set; }
         DbSet<SanPham> sanPhams { get; set; }
+        DbSet<BanPhim> banPhims { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -71,6 +72,15 @@ namespace DAL.DatabaseContext
                 .HasMany(sp => sp.hoaDonChiTiets)
                 .WithOne(hdct => hdct.sanPham)
                 .HasForeignKey(hdct => hdct.MaSP);
+            // tạo quan hệ 1 - 1 với bảng bàn phím
+            modelBuilder.Entity<SanPham>()
+                .HasOne(sp => sp.banPhim)
+                .WithOne(bp => bp.sanPham)
+                .HasForeignKey<BanPhim>(bp => bp.MaSP);
+            #endregion
+
+            #region BanPhim
+            modelBuilder.Entity<BanPhim>().HasKey(bp => bp.MaSP);
             #endregion
         }
 
