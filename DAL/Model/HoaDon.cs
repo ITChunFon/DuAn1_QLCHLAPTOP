@@ -26,6 +26,9 @@ namespace DAL.Model
         public string MaKH { get; set; }
         public KhachHang khachHang { get; set; }
 
+        public string? MaKM { get; set; }
+        public KhuyenMai khuyenMai { get; set; }
+
         public ICollection<HoaDonChiTiet> hoadonchitiets { get; set; }
     }
 }

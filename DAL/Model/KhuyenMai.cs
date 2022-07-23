@@ -16,5 +16,7 @@ namespace DAL.Model
         public DateTime NgayKetThuc { get; set; }
         public Boolean TrangThai { get; set; }
         public string Mota { get; set; }
+
+        public ICollection<HoaDon> hoaDons { get; set; }
     }
 }
