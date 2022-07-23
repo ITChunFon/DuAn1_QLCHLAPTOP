@@ -23,5 +23,6 @@ namespace DAL.Model
 
         public ICollection<BanPhimSoLuongSwitch> banPhimSoLuongSwitches { get; set; }
         public IList<SanPhamMauSac> sanPhamMauSacs { get; set; }
+        public IList<BanPhimKeyCaps> banPhimKeyCaps { get; set; }
     }
 }
