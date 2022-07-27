@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DAL.Migrations
 {
-    [DbContext(typeof(DA1Context))]
+    [DbContext(typeof(DatabaseContext.DA1Context))]
     [Migration("20220719041308_Db7")]
     partial class Db7
     {

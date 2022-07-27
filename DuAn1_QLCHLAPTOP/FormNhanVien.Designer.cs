@@ -61,10 +61,12 @@
             this.lb_matkhau = new System.Windows.Forms.Label();
             this.lb_tennv = new System.Windows.Forms.Label();
             this.lb_manv = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.groupBox_thongtin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox_thietlap.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -103,6 +105,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.GhostWhite;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(14, 142);
@@ -158,12 +161,11 @@
             // 
             // groupBox_thietlap
             // 
+            this.groupBox_thietlap.Controls.Add(this.panel1);
             this.groupBox_thietlap.Controls.Add(this.bt_sua);
             this.groupBox_thietlap.Controls.Add(this.bt_them);
             this.groupBox_thietlap.Controls.Add(this.rdb_nghiviec);
             this.groupBox_thietlap.Controls.Add(this.rdb_danglam);
-            this.groupBox_thietlap.Controls.Add(this.rdb_nu);
-            this.groupBox_thietlap.Controls.Add(this.rdb_nam);
             this.groupBox_thietlap.Controls.Add(this.comboBox_vaitro);
             this.groupBox_thietlap.Controls.Add(this.tb_ngaysinh);
             this.groupBox_thietlap.Controls.Add(this.tb_dienthoai);
@@ -212,6 +214,7 @@
             this.bt_them.TabIndex = 22;
             this.bt_them.Text = "Thêm";
             this.bt_them.UseVisualStyleBackColor = false;
+            this.bt_them.Click += new System.EventHandler(this.bt_them_Click);
             // 
             // rdb_nghiviec
             // 
@@ -241,7 +244,7 @@
             // 
             this.rdb_nu.AutoSize = true;
             this.rdb_nu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rdb_nu.Location = new System.Drawing.Point(1018, 197);
+            this.rdb_nu.Location = new System.Drawing.Point(160, 2);
             this.rdb_nu.Name = "rdb_nu";
             this.rdb_nu.Size = new System.Drawing.Size(55, 27);
             this.rdb_nu.TabIndex = 19;
@@ -253,7 +256,7 @@
             // 
             this.rdb_nam.AutoSize = true;
             this.rdb_nam.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rdb_nam.Location = new System.Drawing.Point(873, 197);
+            this.rdb_nam.Location = new System.Drawing.Point(15, 2);
             this.rdb_nam.Name = "rdb_nam";
             this.rdb_nam.Size = new System.Drawing.Size(73, 27);
             this.rdb_nam.TabIndex = 18;
@@ -429,6 +432,15 @@
             this.lb_manv.TabIndex = 0;
             this.lb_manv.Text = "Mã Nhân Viên";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.rdb_nu);
+            this.panel1.Controls.Add(this.rdb_nam);
+            this.panel1.Location = new System.Drawing.Point(858, 195);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(226, 30);
+            this.panel1.TabIndex = 24;
+            // 
             // FormNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -444,6 +456,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox_thietlap.ResumeLayout(false);
             this.groupBox_thietlap.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -482,5 +496,6 @@
         private RadioButton rdb_danglam;
         private RadioButton rdb_nu;
         private RadioButton rdb_nam;
+        private Panel panel1;
     }
 }
