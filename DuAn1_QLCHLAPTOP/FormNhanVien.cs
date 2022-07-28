@@ -53,7 +53,7 @@ namespace Presentation
                 _nv.TrangThai = true ? rdb_danglam.Checked:rdb_nghiviec.Checked;
                 _nv.NgaySinh = Convert.ToDateTime(tb_ngaysinh.Text);
                 _nv.SoDienThoai = tb_dienthoai.Text;
-                _nv.TaiKhoan = tb_email.Text;
+
                 _IQLnv.addNV(_nv);
                 MessageBox.Show("Thêm nhân viên thành công");
             }
