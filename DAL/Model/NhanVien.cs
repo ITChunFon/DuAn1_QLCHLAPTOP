@@ -10,6 +10,7 @@ namespace DAL.Model
     {
         public string MaNV { get; set; }
         public string TenNV { get; set; }
+        public string GioiTinh { get; set; }
         public bool TrangThai { get; set; }
         public string TaiKhoan { get; set; }
         public string MatKhau { get; set; } 
