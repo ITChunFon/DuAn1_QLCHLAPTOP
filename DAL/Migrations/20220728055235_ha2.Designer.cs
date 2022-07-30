@@ -11,9 +11,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DAL.Migrations
 {
-    [DbContext(typeof(DatabaseContext.DA1Context))]
-    [Migration("20220724082623_ha")]
-    partial class ha
+    [DbContext(typeof(DA1Context))]
+    [Migration("20220728055235_ha2")]
+    partial class ha2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -288,6 +288,10 @@ namespace DAL.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GioiTinh")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

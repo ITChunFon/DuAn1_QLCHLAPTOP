@@ -289,6 +289,10 @@ namespace DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("GioiTinh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("MaQuanLi")
                         .HasColumnType("nvarchar(450)");
 
@@ -300,10 +304,6 @@ namespace DAL.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("SoDienThoai")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TaiKhoan")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

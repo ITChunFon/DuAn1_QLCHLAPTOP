@@ -11,12 +11,12 @@ namespace DAL.Repository
 {
     public class KhachHangRepository : IKhachHangRepository
     {
-        private DA1Context _DA1context;
+        private DatabaseContext.DA1Context _DA1context;
         private List<KhachHang> _lstKhachHang;
         public KhachHangRepository()
         {
             _lstKhachHang = new List<KhachHang>();
-            _DA1context = new DA1Context();
+            _DA1context = new DatabaseContext.DA1Context();
             LayDanhSachKhachHang();
         }
         public List<KhachHang> LayDanhSachKhachHang()

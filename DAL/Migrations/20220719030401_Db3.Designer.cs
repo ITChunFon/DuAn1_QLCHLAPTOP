@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DAL.Migrations
 {
-    [DbContext(typeof(DA1Context))]
+    [DbContext(typeof(DatabaseContext.DA1Context))]
     [Migration("20220719030401_Db3")]
     partial class Db3
     {
