@@ -136,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1432, 903);
+            this.ClientSize = new System.Drawing.Size(1432, 1020);
             this.Controls.Add(this.bt_guibaocao);
             this.Controls.Add(this.rdb_nam);
             this.Controls.Add(this.comboBox2);

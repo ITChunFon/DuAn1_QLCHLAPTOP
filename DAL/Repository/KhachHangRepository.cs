@@ -24,5 +24,17 @@ namespace DAL.Repository
             _lstKhachHang = _DA1context.khachHangs.ToList();
             return _lstKhachHang;
         }
+        public bool ThemKH(KhachHang kh)
+        {
+            _DA1context.khachHangs.Add(kh);
+            _DA1context.SaveChanges();
+            return true;
+        }
+        public bool SuaKH(KhachHang kh)
+        {
+            _DA1context.khachHangs.Update(kh);
+            _DA1context.SaveChanges();
+            return true;
+        }
     }
 }
